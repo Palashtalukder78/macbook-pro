@@ -96,17 +96,17 @@ document.getElementById('promo-apply-btn').addEventListener('click',function(){
     const totalPriceWithDiscount = totalProductPrice - discountAmount;
     //Show message
     const successMessage = document.getElementById('notify-success');
-    const ErrorMessage = document.getElementById('notify-fail');
+    const errorMessage = document.getElementById('notify-fail');
     //Apply Promo code
     if(promoFieldValue.toLowerCase() == promoCode.toLowerCase()){
         document.getElementById('final-price').innerText = totalPriceWithDiscount;
         promoField.value = '';
         successMessage.style.display = 'block';
-        ErrorMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
     }else{
         promoField.value = '';
         successMessage.style.display = 'none';
-        ErrorMessage.style.display = 'block';
+        errorMessage.style.display = 'block';
     }
 });
 //-------------------------------- Promo Code Handle End-----------------------------
