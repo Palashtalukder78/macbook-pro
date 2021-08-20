@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,124 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="constainer m-5">
         <div class="row">
+            <!-- Photo Section  -->
             <div class="col-md-6">
-                <img class="img-fluid" src="images/mac1.jpeg" alt="">
-                <div class="my-3 text-center">
-                    <img style="width: 130; height: 80px; border: 1px solid rgb(224, 210, 210);" class="img-fluid" src="images/mac1.jpeg" alt="">
-                    <img style="width: 130; height: 80px; border: 1px solid rgb(224, 210, 210);" class="img-fluid" src="images/mac2.png" alt="">
-                    <img style="width: 130; height: 80px; border: 1px solid rgb(224, 210, 210);" class="img-fluid" src="images/mac3.jpeg" alt="">
+                <!-- Big photo Section  -->
+                <section>
+                    <img id="big-image" class="img-fluid" src="images/mac1.jpeg" alt="">
+                </section>
+                <!-- Small Photo section  -->
+                <section >
+                    <div class="my-3 text-center small-image-section">
+                        <img id="first-image" style="width: 130; height: 80px; border: 1px solid rgb(224, 210, 210);" class="img-fluid"
+                            src="images/mac1.jpeg" alt="">
+                        <img id="second-image" style="width: 130; height: 80px; border: 1px solid rgb(224, 210, 210);" class="img-fluid"
+                            src="images/mac2.jpeg" alt="">
+                        <img id="third-image" style="width: 130; height: 80px; border: 1px solid rgb(224, 210, 210);" class="img-fluid"
+                            src="images/mac3.jpeg" alt="">
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <!-- Pricing Category  -->
+                <section class="price-category">
+                    <h2>Customize your Blue 24 inc iMac with apple M1 Chip</h2>
+                    <p>The Apple M1 is an ARM-based system on a chip. It was designed by Apple Inc. as a central
+                        processing
+                        unit and graphics processing unit for its Macintosh computers and iPad Pro tablets. It was
+                        inspired
+                        by their Apple A14 Bionic chip</p>
+                    <div class="my-4">
+                        <h5>Memory</h5>
+                        <button id="eight-gb-btn" class="btn btn-primar btn-sm"
+                            style="border: 1px solid rgb(211, 187, 187);">8GB Unified
+                            Memory</button>
+                        <button id="sixteen-gb-btn" class="btn btn-primar btn-sm"
+                            style="border: 1px solid rgb(211, 187, 187);">16GB Unified
+                            Memory</button>
+                    </div>
+                    <div class="my-4">
+                        <h5>Storage</h5>
+                        <button id="two-hundrad-fifty-six-gb-btn" class="btn btn-primar btn-sm"
+                            style="border: 1px solid rgb(211, 187, 187);">256GB SSD
+                            Storage</button>
+                        <button id="five-hundrad-twelve-gb-btn" class="btn btn-primar btn-sm"
+                            style="border: 1px solid rgb(211, 187, 187);">512GB SSD
+                            Storage</button>
+                        <button id="one-tera-byte-btn" class="btn btn-primar btn-sm"
+                            style="border: 1px solid rgb(211, 187, 187);">1TB SSD
+                            Storage</button>
+                    </div>
+                    <div class="my-4">
+                        <h5>Chose Your Delivery Option</h5>
+                        <button id="free-prime-delivery" class="btn btn-primar btn-sm"
+                            style="border: 1px solid rgb(211, 187, 187);">Friday, Aug
+                            25
+                            Free prime Delivery</button>
+                        <button id="immediate-delivery" class="btn btn-primar btn-sm"
+                            style="border: 1px solid rgb(211, 187, 187);">Friday, Aug
+                            21
+                            Delivery Charge $20</button>
+                    </div>
+                </section>
+                <!-- Price Calculation  -->
+                <section>
+                    <div style="width: 40%; margin: 50px 0;">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><b>Best Price</b></td>
+                                    <td><b>$<span id="best-price">1299</span></b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Extra Memory Cost</b></td>
+                                    <td><b>$<span id="memory-cost">0</span></b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Extra Storage Cost</b></td>
+                                    <td><b>$<span id="storage-cost">0</span></b></td>
+                                </tr>
+                                <tr>
+                                    <td><b>Delivery Charge</b></td>
+                                    <td><b>$<span id="delivery-charge">0</span></b></td>
+                                </tr>
+                            <tfoot>
+                                <tr>
+                                    <td><b>Total Price</b></td>
+                                    <td><b>$<span id="total-price">1299</span></b></td>
+                                </tr>
+                            </tfoot>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <!-- For Promo Code  -->
+                <section>
+                    <div style="width: 40%; margin-top: 50px;">
+                        <h6>Add Promo code</h6>
+                        <div class="input-group input-group-sm mb-3">
+                            <input id="promo-code-field" type="text" class="form-control">
+                            <button id="promo-apply-btn" class="input-group-text btn btn-danger">Apply</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-12 text-center mb-0 pb-0">
+                <hr>
+                <h2>Total: $ <span id="final-price">1299</span></h2>
+                <div class="notify-section">
+                    <p id="notify-fail" class="notify">❌ The Promo Code Doesn't Match for this Product.</p>
+                    <p id="notify-success" class="notify">✅ Congratulations !! You got 20% Discount</p>
                 </div>
             </div>
-            <div class="col-md-6">
-
-            </div>
-            
         </div>
     </div>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
