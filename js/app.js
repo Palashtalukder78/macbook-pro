@@ -92,14 +92,14 @@ document.getElementById('promo-apply-btn').addEventListener('click',function(){
     //Get total price
     const totalProductPrice = calculation();
     //Make 20% Discount
-    const discount = (20 * totalProductPrice) / 100;
-    const withOutDiscount = totalProductPrice - discount;
+    const discountAmount = (20 * totalProductPrice) / 100;
+    const totalPriceWithDiscount = totalProductPrice - discountAmount;
     //Show message
     const successMessage = document.getElementById('notify-success');
     const ErrorMessage = document.getElementById('notify-fail');
     //Apply Promo code
     if(promoFieldValue.toLowerCase() == promoCode.toLowerCase()){
-        document.getElementById('final-price').innerText = withOutDiscount;
+        document.getElementById('final-price').innerText = totalPriceWithDiscount;
         promoField.value = '';
         successMessage.style.display = 'block';
         ErrorMessage.style.display = 'none';
