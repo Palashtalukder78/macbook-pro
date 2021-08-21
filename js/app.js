@@ -80,7 +80,6 @@ function calculation(){
 
     return totalPrice;
 }
-calculation();
 //-----------------------------------Calculation End ----------------------------------
 
 //-------------------------------- Promo Code Handle Start-----------------------------
