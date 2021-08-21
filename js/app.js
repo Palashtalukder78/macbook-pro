@@ -3,7 +3,7 @@ const bigImageLocation = document.getElementById('big-image');
 function setPhoto(photoNumber){
     bigImageLocation.src = 'images/mac'+photoNumber+'.jpeg';
 }
-
+//Set image number in the src 
 document.getElementById('first-image').addEventListener('click',function(){
     setPhoto('1');
 });

@@ -5,6 +5,7 @@ body{
     background-color: #000;
     color: #fff;
 }
+/* Style Notification Style  */
 .notify {
     color: #fff;
     text-align: center;
@@ -19,7 +20,7 @@ body{
     width: 30%;
     margin: 0 auto;
 }
-
+/* Media Query Style  */
 @media (max-width: 1024px) {
     .promo-code{
         width: 100% !important;
