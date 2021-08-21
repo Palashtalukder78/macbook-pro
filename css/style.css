@@ -16,6 +16,27 @@ body{
     display: none;
 }
 .notify-section{
-    width: 35%;
+    width: 30%;
     margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .promo-code{
+        width: 100% !important;
+    }
+    .calculation-table{
+        width: 100% !important;
+    }
+    .price-category button{
+        margin-bottom: 10px !important;
+        display: block;
+        text-align: center;
+    }
+    .small-images img{
+        width: 80px;
+        height: 60px !important;
+    }
+    .notify-section{
+        width: 100%;
+    }
 }
